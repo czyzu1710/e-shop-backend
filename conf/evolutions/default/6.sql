@@ -1,0 +1,4 @@
+INSERT INTO CLOTH_TYPE(TYPE_NAME)
+VALUES ('SPODNIE'),
+       ('KURTKI'),
+       ('T-SHIRT');
