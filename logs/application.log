@@ -1,35 +1,102 @@
-2021-09-11 22:22:08 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2021-09-13 21:35:25 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2021-09-11 22:22:09 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2021-09-11 23:31:45 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+2021-09-13 21:35:25 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:35:26 [31mWARN [0;39m [36mp.filters.hosts.AllowedHostsFilter[0;39m [35m[0;39m Host not allowed: localhost:9000
+2021-09-13 21:35:26 [31mWARN [0;39m [36mp.filters.hosts.AllowedHostsFilter[0;39m [35m[0;39m Host not allowed: localhost:9000
+2021-09-13 21:35:28 [31mWARN [0;39m [36mp.filters.hosts.AllowedHostsFilter[0;39m [35m[0;39m Host not allowed: localhost:9000
+2021-09-13 21:35:29 [31mWARN [0;39m [36mp.filters.hosts.AllowedHostsFilter[0;39m [35m[0;39m Host not allowed: localhost:9000
+2021-09-13 21:35:31 [31mWARN [0;39m [36mp.filters.hosts.AllowedHostsFilter[0;39m [35m[0;39m Host not allowed: localhost:9000
+2021-09-13 21:37:13 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m Can't read play.editor config because the configuration can't be loaded. This usually means there's a syntax error in your conf files.
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 29: List should have ] or a first element after the open [, instead had token: 'u' ('$' not followed by {, 'u' not allowed after '$') (if you want 'u' ('$' not followed by {, 'u' not allowed after '$') to be part of a string value, then double-quote it)]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.Configuration$.load(Configuration.scala:113)
+	at play.api.http.DefaultHttpErrorHandler$.$anonfun$setEditor$1(HttpErrorHandler.scala:528)
+	at scala.util.Try$.apply(Try.scala:209)
+	at play.api.http.DefaultHttpErrorHandler$.setEditor$lzycompute(HttpErrorHandler.scala:528)
+	at play.api.http.DefaultHttpErrorHandler$.setEditor(HttpErrorHandler.scala:527)
+	at play.api.http.DefaultHttpErrorHandler$.onServerError(HttpErrorHandler.scala:543)
+	at play.core.server.Server$$anonfun$handleErrors$1$1.applyOrElse(Server.scala:109)
+	at play.core.server.Server$$anonfun$handleErrors$1$1.applyOrElse(Server.scala:105)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:34)
+	at play.core.server.Server$.getHandlerFor(Server.scala:132)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:317)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:495)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:775)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:790)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: com.typesafe.config.ConfigException$Parse: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 29: List should have ] or a first element after the open [, instead had token: 'u' ('$' not followed by {, 'u' not allowed after '$') (if you want 'u' ('$' not followed by {, 'u' not allowed after '$') to be part of a string value, then double-quote it)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseArray(ConfigDocumentParser.java:567)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:249)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.consolidateValues(ConfigDocumentParser.java:152)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:473)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:458)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:648)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:262)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:250)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:309)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:738)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:701)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:133)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1080)
+	at com.typesafe.config.DefaultConfigLoadingStrategy.parseApplicationConfig(DefaultConfigLoadingStrategy.java:36)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:529)
+	at play.api.Configuration$.$anonfun$load$6(Configuration.scala:74)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:70)
+	... 35 common frames omitted
+2021-09-13 21:37:13 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
 
-! @7l30pf6hn - Internal server error, for (GET) [/api/v1/product/1] ->
+! @7l3eohm06 - Internal server error, for (GET) [/api/v1/product/page/0] ->
  
-play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
- found   : dto.SingleClothDto
- required: dto.ClothDto]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 29: List should have ] or a first element after the open [, instead had token: 'u' ('$' not followed by {, 'u' not allowed after '$') (if you want 'u' ('$' not followed by {, 'u' not allowed after '$') to be part of a string value, then double-quote it)]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.ApplicationLoader$Context$.create(ApplicationLoader.scala:126)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$2(DevServerStart.scala:190)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:148)
 	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:302)
 	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
 	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
@@ -54,30 +121,51 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
-2021-09-11 23:31:49 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+Caused by: com.typesafe.config.ConfigException$Parse: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 29: List should have ] or a first element after the open [, instead had token: 'u' ('$' not followed by {, 'u' not allowed after '$') (if you want 'u' ('$' not followed by {, 'u' not allowed after '$') to be part of a string value, then double-quote it)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:201)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseError(ConfigDocumentParser.java:197)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseArray(ConfigDocumentParser.java:567)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:249)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.consolidateValues(ConfigDocumentParser.java:152)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:473)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseValue(ConfigDocumentParser.java:247)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parseObject(ConfigDocumentParser.java:458)
+	at com.typesafe.config.impl.ConfigDocumentParser$ParseContext.parse(ConfigDocumentParser.java:648)
+	at com.typesafe.config.impl.ConfigDocumentParser.parse(ConfigDocumentParser.java:14)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:262)
+	at com.typesafe.config.impl.Parseable.rawParseValue(Parseable.java:250)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:309)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:738)
+	at com.typesafe.config.impl.Parseable$ParseableResources.rawParseValue(Parseable.java:701)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:180)
+	at com.typesafe.config.impl.Parseable.parseValue(Parseable.java:174)
+	at com.typesafe.config.impl.Parseable.parse(Parseable.java:152)
+	at com.typesafe.config.impl.SimpleIncluder.fromBasename(SimpleIncluder.java:185)
+	at com.typesafe.config.impl.ConfigImpl.parseResourcesAnySyntax(ConfigImpl.java:133)
+	at com.typesafe.config.ConfigFactory.parseResourcesAnySyntax(ConfigFactory.java:1080)
+	at com.typesafe.config.DefaultConfigLoadingStrategy.parseApplicationConfig(DefaultConfigLoadingStrategy.java:36)
+	at com.typesafe.config.ConfigFactory.defaultApplication(ConfigFactory.java:529)
+	at play.api.Configuration$.$anonfun$load$6(Configuration.scala:74)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.Configuration$.load(Configuration.scala:70)
+	... 30 common frames omitted
+2021-09-13 21:38:44 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
 
-! @7l30pfbno - Internal server error, for (GET) [/api/v1/product/1] ->
+! @7l3eon04a - Internal server error, for (GET) [/api/v1/product/page/0] ->
  
-play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
- found   : dto.SingleClothDto
- required: dto.ClothDto]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.frontend}]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.ApplicationLoader$Context$.create(ApplicationLoader.scala:126)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$2(DevServerStart.scala:190)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:148)
 	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:302)
 	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
 	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
@@ -102,30 +190,62 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
-2021-09-11 23:33:12 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+Caused by: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.frontend}
+	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigList$ResolveModifier.modifyChildMayThrow(SimpleConfigList.java:139)
+	at com.typesafe.config.impl.SimpleConfigList.modifyMayThrow(SimpleConfigList.java:97)
+	at com.typesafe.config.impl.SimpleConfigList.resolveSubstitutions(SimpleConfigList.java:158)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:132)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:59)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:231)
+	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:78)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:68)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:41)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:216)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:183)
+	at play.api.Configuration$.load(Configuration.scala:94)
+	... 30 common frames omitted
+2021-09-13 21:38:50 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
 
-! @7l30pk4cg - Internal server error, for (GET) [/api/v1/product/1] ->
+! @7l3eon04a - Internal server error, for (GET) [/api/v1/product/page/0] ->
  
-play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
- found   : dto.SingleClothDto
- required: dto.ClothDto]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.frontend}]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.ApplicationLoader$Context$.create(ApplicationLoader.scala:126)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$2(DevServerStart.scala:190)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:148)
 	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:302)
 	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
 	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
@@ -150,30 +270,62 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
-2021-09-11 23:33:25 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+Caused by: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.frontend}
+	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigList$ResolveModifier.modifyChildMayThrow(SimpleConfigList.java:139)
+	at com.typesafe.config.impl.SimpleConfigList.modifyMayThrow(SimpleConfigList.java:97)
+	at com.typesafe.config.impl.SimpleConfigList.resolveSubstitutions(SimpleConfigList.java:158)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:132)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:59)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:231)
+	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:78)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:68)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:41)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:216)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:183)
+	at play.api.Configuration$.load(Configuration.scala:94)
+	... 30 common frames omitted
+2021-09-13 21:38:54 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
 
-! @7l30pknjm - Internal server error, for (GET) [/api/v1/product/1] ->
+! @7l3eon04a - Internal server error, for (GET) [/api/v1/product/page/0] ->
  
-play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
- found   : dto.SingleClothDto
- required: dto.ClothDto]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.frontend}]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.ApplicationLoader$Context$.create(ApplicationLoader.scala:126)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$2(DevServerStart.scala:190)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:148)
 	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:302)
 	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
 	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
@@ -198,11 +350,383 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[type mismatch;
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
-2021-09-11 23:34:07 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+Caused by: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.frontend}
+	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigList$ResolveModifier.modifyChildMayThrow(SimpleConfigList.java:139)
+	at com.typesafe.config.impl.SimpleConfigList.modifyMayThrow(SimpleConfigList.java:97)
+	at com.typesafe.config.impl.SimpleConfigList.resolveSubstitutions(SimpleConfigList.java:158)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:132)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:59)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:231)
+	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:78)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:68)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:41)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:216)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:183)
+	at play.api.Configuration$.load(Configuration.scala:94)
+	... 30 common frames omitted
+2021-09-13 21:39:43 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+
+! @7l3ep0a4l - Internal server error, for (GET) [/api/v1/product/page/0] ->
+ 
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.fronted}]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.ApplicationLoader$Context$.create(ApplicationLoader.scala:126)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$2(DevServerStart.scala:190)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:148)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:302)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:495)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:775)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:790)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.fronted}
+	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigList$ResolveModifier.modifyChildMayThrow(SimpleConfigList.java:139)
+	at com.typesafe.config.impl.SimpleConfigList.modifyMayThrow(SimpleConfigList.java:97)
+	at com.typesafe.config.impl.SimpleConfigList.resolveSubstitutions(SimpleConfigList.java:158)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:132)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:59)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:231)
+	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:78)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:68)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:41)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:216)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:183)
+	at play.api.Configuration$.load(Configuration.scala:94)
+	... 30 common frames omitted
+2021-09-13 21:39:51 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+
+! @7l3ep0a4l - Internal server error, for (GET) [/api/v1/product/page/0] ->
+ 
+play.api.Configuration$$anon$1: Configuration error[application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.fronted}]
+	at play.api.Configuration$.$anonfun$configError$1(Configuration.scala:157)
+	at scala.Option.map(Option.scala:146)
+	at play.api.Configuration$.configError(Configuration.scala:149)
+	at play.api.Configuration$.load(Configuration.scala:98)
+	at play.api.Configuration$.load(Configuration.scala:107)
+	at play.api.ApplicationLoader$Context$.create(ApplicationLoader.scala:126)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$2(DevServerStart.scala:190)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:148)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:302)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:224)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1297)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:495)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:775)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:790)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: com.typesafe.config.ConfigException$UnresolvedSubstitution: application.conf @ file:/home/michal/Dokumenty/E-Biznes/e-shop-backend/target/scala-2.12/classes/application.conf: 30: Could not resolve substitution to a value: ${urls.fronted}
+	at com.typesafe.config.impl.ConfigReference.resolveSubstitutions(ConfigReference.java:111)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigList$ResolveModifier.modifyChildMayThrow(SimpleConfigList.java:139)
+	at com.typesafe.config.impl.SimpleConfigList.modifyMayThrow(SimpleConfigList.java:97)
+	at com.typesafe.config.impl.SimpleConfigList.resolveSubstitutions(SimpleConfigList.java:158)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:132)
+	at com.typesafe.config.impl.ConfigDelayedMerge.resolveSubstitutions(ConfigDelayedMerge.java:59)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.SimpleConfigObject$ResolveModifier.modifyChildMayThrow(SimpleConfigObject.java:380)
+	at com.typesafe.config.impl.SimpleConfigObject.modifyMayThrow(SimpleConfigObject.java:313)
+	at com.typesafe.config.impl.SimpleConfigObject.resolveSubstitutions(SimpleConfigObject.java:399)
+	at com.typesafe.config.impl.ResolveContext.realResolve(ResolveContext.java:179)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:142)
+	at com.typesafe.config.impl.ResolveContext.resolve(ResolveContext.java:231)
+	at com.typesafe.config.impl.SimpleConfig.resolveWith(SimpleConfig.java:78)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:68)
+	at com.typesafe.config.impl.SimpleConfig.resolve(SimpleConfig.java:41)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:216)
+	at com.typesafe.config.ConfigFactory.load(ConfigFactory.java:183)
+	at play.api.Configuration$.load(Configuration.scala:94)
+	... 30 common frames omitted
+2021-09-13 21:40:02 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2021-09-11 23:34:07 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:40:02 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:40:02 [31mWARN [0;39m [36mplay.filters.cors.CORSFilter[0;39m [35m[0;39m Invalid CORS request;Origin=Some(http://localhost:3000);Method=GET;Access-Control-Request-Headers=None
+2021-09-13 21:40:07 [31mWARN [0;39m [36mplay.filters.cors.CORSFilter[0;39m [35m[0;39m Invalid CORS request;Origin=Some(http://localhost:3000);Method=GET;Access-Control-Request-Headers=None
+2021-09-13 21:41:53 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:41:53 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:41:53 [31mWARN [0;39m [36mp.filters.hosts.AllowedHostsFilter[0;39m [35m[0;39m Host not allowed: localhost:9000
+2021-09-13 21:42:56 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:42:56 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:42:56 [31mWARN [0;39m [36mplay.filters.cors.CORSFilter[0;39m [35m[0;39m Invalid CORS request;Origin=Some(http://localhost:3000);Method=GET;Access-Control-Request-Headers=None
+2021-09-13 21:44:50 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:44:50 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:46:36 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:46:36 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:50:57 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:50:57 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:54:36 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+
+! @7l3f0p4pb - Internal server error, for (GET) [/authenticate/github] ->
+ 
+play.api.PlayException: Execution exception[[IllegalArgumentException: Illegal character in path at index 1: ${urls.backend_full}/authenticate/github]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$3(HttpErrorHandler.scala:388)
+	at scala.Option.getOrElse(Option.scala:121)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:388)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:430)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:422)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 1: ${urls.backend_full}/authenticate/github
+	at java.base/java.net.URI.create(URI.java:883)
+	at com.mohiva.play.silhouette.impl.providers.SocialProvider.resolveCallbackURL(SocialProvider.scala:113)
+	at com.mohiva.play.silhouette.impl.providers.SocialProvider.resolveCallbackURL$(SocialProvider.scala:113)
+	at com.mohiva.play.silhouette.impl.providers.oauth2.GitHubProvider.resolveCallbackURL(GitHubProvider.scala:118)
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider.$anonfun$handleAuthorizationFlow$1(OAuth2Provider.scala:211)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:287)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	... 5 common frames omitted
+Caused by: java.net.URISyntaxException: Illegal character in path at index 1: ${urls.backend_full}/authenticate/github
+	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+	at java.base/java.net.URI$Parser.parse(URI.java:3125)
+	at java.base/java.net.URI.<init>(URI.java:600)
+	at java.base/java.net.URI.create(URI.java:881)
+	... 16 common frames omitted
+2021-09-13 21:57:29 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:57:29 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:57:31 [1;31mERROR[0;39m [36mp.api.http.DefaultHttpErrorHandler[0;39m [35m[0;39m 
+
+! @7l3f193p6 - Internal server error, for (GET) [/authenticate/github?code=8a5d4994a9c57be5b1a3&state=1-543ccd086da6606b57dafc22ae7932f39fe1b274-Y3NyZi1zdGF0ZQ%3D%3D-eyJ0b2tlbiI6IjZkOWZmOWUzMzI1OWU5MzY0OWQ3MzJjNzlhMGM2NTAxMmUwYjM1M2FlYjZjNjNjYzczMzdlMzhlMzNlMGZmNmFkNzlhMzUxNTVkZjVhYmQxODIwYjI1ZGZiYTdjNjM4OWVlMjJiMGU3YTNjYjRkNDA2ZDdjOWE3YjdmN2E5Yjc2ZGVlYzQyNTZjYTY3ZmRjNmRjNDIxYWUxZWFmYTMzOTJiOWI1M2NjOWY3ZGExOTFmOGYxNDJkNmZhY2JjZGUzMDljMThiMTU5MmEyYzU5MGZkOWQwZDI0MDNhYmU4OTVkZWZlNmJiYTQyMjlmMTY1YTA3OTg4NGQwYWVjZGIwNzkifQ%3D%3D] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[BadPath: path parameter: Invalid path '': path has a leading, trailing, or two adjacent period '.' (use quoted "" empty string if you want an empty element)]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
+	at scala.Option.map(Option.scala:146)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:430)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:422)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:412)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:12)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:81)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: com.typesafe.config.ConfigException$BadPath: path parameter: Invalid path '': path has a leading, trailing, or two adjacent period '.' (use quoted "" empty string if you want an empty element)
+	at com.typesafe.config.impl.PathParser.parsePathExpression(PathParser.java:170)
+	at com.typesafe.config.impl.PathParser.parsePathExpression(PathParser.java:74)
+	at com.typesafe.config.impl.PathParser.parsePath(PathParser.java:61)
+	at com.typesafe.config.impl.Path.newPath(Path.java:230)
+	at com.typesafe.config.impl.SimpleConfig.find(SimpleConfig.java:192)
+	at com.typesafe.config.impl.SimpleConfig.getString(SimpleConfig.java:250)
+	at play.api.ConfigLoader$.$anonfun$stringLoader$2(Configuration.scala:430)
+	at play.api.ConfigLoader$.play$api$ConfigLoader$$$anonfun$apply$1(Configuration.scala:428)
+	at play.api.ConfigLoader$$anonfun$apply$2.load(Configuration.scala:428)
+	at play.api.Configuration.get(Configuration.scala:226)
+	at controllers.SocialAuthController.$anonfun$authenticate$10(SocialAuthController.scala:32)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	... 14 common frames omitted
+2021-09-13 21:58:46 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2021-09-13 21:58:46 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2021-09-13 21:58:46 [1;31mERROR[0;39m [36mcontrollers.SocialAuthController[0;39m [35m[0;39m Unexpected provider error
+com.mohiva.play.silhouette.impl.exceptions.UnexpectedResponseException: [Silhouette][github] Cannot build OAuth2Info because of invalid response format: List((/access_token,List(JsonValidationError(List(error.path.missing),WrappedArray()))))
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider.$anonfun$buildInfo$2(OAuth2Provider.scala:264)
+	at scala.util.Either.fold(Either.scala:189)
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider.buildInfo(OAuth2Provider.scala:265)
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider.buildInfo$(OAuth2Provider.scala:259)
+	at com.mohiva.play.silhouette.impl.providers.oauth2.GitHubProvider.buildInfo(GitHubProvider.scala:118)
+	at com.mohiva.play.silhouette.impl.providers.OAuth2Provider.$anonfun$getAccessToken$3(OAuth2Provider.scala:249)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:302)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:37)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at scala.concurrent.impl.ExecutionContextImpl$AdaptedForkJoinTask.exec(ExecutionContextImpl.scala:140)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+2021-09-13 22:06:11 [34mINFO [0;39m [36mp.a.i.l.c.CoordinatedShutdownSupport[0;39m [35m[0;39m Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2021-09-13 22:06:11 [34mINFO [0;39m [36mplay.core.server.AkkaHttpServer[0;39m [35m[0;39m Stopping Akka HTTP server...
+2021-09-13 22:06:11 [34mINFO [0;39m [36mplay.core.server.AkkaHttpServer[0;39m [35m[0;39m Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2021-09-13 22:06:11 [34mINFO [0;39m [36mplay.core.server.AkkaHttpServer[0;39m [35m[0;39m Running provided shutdown stop hooks

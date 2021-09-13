@@ -4,14 +4,14 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET        /                                       controllers.HomeController.index()
+GET         /                                       controllers.HomeController.index()
 
-# Map static resources from the /public folder to the /assets URL path
-#GET        /api/v1/images/*file                            controllers.Assets.at(file)
-GET        /api/v1/images/*file                    controllers.ClothController.getImage(file, width: Option[Int], height: Option[Int])
+GET         /api/v1/images/*file                    controllers.ClothController.getImage(file, width: Option[Int], height: Option[Int])
 
+GET         /api/v1/product/page/:pageNumber        controllers.ClothController.getCloths(pageNumber: Int)
+GET         /api/v1/product/:id                     controllers.ClothController.getCloth(id: Long)
 
-GET        /api/v1/product/page/:pageNumber        controllers.ClothController.getCloths(pageNumber: Int)
-
-
-GET        /api/v1/product/:id                              controllers.ClothController.getCloth(id: Long)
+GET         /authenticate/:provider                 controllers.SocialAuthController.authenticate(provider: String)
+POST        /api/v1/signUp                          controllers.SignUpController.signUp
+POST        /api/v1/signIn                          controllers.SignInController.signIn
+POST        /api/v1/signOut                         controllers.SignInController.signOut
